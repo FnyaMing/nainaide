@@ -1,0 +1,68 @@
+version: '3'
+
+services:
+  nainaidednode0:
+    container_name: nainaidednode0
+    image: "tendermint/nainaidednode"
+    ports:
+      - "26656-26657:26656-26657"
+    environment:
+      - ID=0
+      - LOG=${LOG:-nainaided.log}
+    volumes:
+      - ./build:/nainaided:Z
+    networks:
+      localnet:
+        ipv4_address: 192.168.10.2
+
+  nainaidednode1:
+    container_name: nainaidednode1
+    image: "tendermint/nainaidednode"
+    ports:
+      - "26659-26660:26656-26657"
+    environment:
+      - ID=1
+      - LOG=${LOG:-nainaided.log}
+    volumes:
+      - ./build:/nainaided:Z
+    networks:
+      localnet:
+        ipv4_address: 192.168.10.3
+
+  nainaidednode2:
+    container_name: nainaidednode2
+    image: "tendermint/nainaidednode"
+    environment:
+      - ID=2
+      - LOG=${LOG:-nainaided.log}
+    ports:
+      - "26661-26662:26656-26657"
+    volumes:
+      - ./build:/nainaided:Z
+    networks:
+      localnet:
+        ipv4_address: 192.168.10.4
+
+  nainaidednode3:
+    container_name: nainaidednode3
+    image: "tendermint/nainaidednode"
+    environment:
+      - ID=3
+      - LOG=${LOG:-nainaided.log}
+    ports:
+      - "26663-26664:26656-26657"
+    volumes:
+      - ./build:/nainaided:Z
+    networks:
+      localnet:
+        ipv4_address: 192.168.10.5
+
+networks:
+  localnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      -
+        subnet: 192.168.10.0/16
+

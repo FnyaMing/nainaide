@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="48c05add-057a-4308-9ff5-1e4cf650da31" name="kafka" url="">
+        <fileTransfer rootFolder="/home/ubuntu" accessType="SFTP" host="192.168.1.127" port="22" sshConfigId="72d691b3-528d-48c1-9782-d11a6420aef3" sshConfig="ubuntu@192.168.1.127:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
