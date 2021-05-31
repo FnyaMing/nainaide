@@ -1,9 +1,8 @@
-module nainaide
+module github.com/FnyaMing/nainaide
 
 go 1.12
 
 require (
-	github.com/FnyaMing/nainaide v0.0.0-20210526103132-11bf8bd50390
 	github.com/bartekn/go-bip39 v0.0.0-20171116152956-a05967ea095d
 	github.com/bgentry/speakeasy v0.1.0
 	github.com/btcsuite/btcd v0.0.0-20190523000118-16327141da8c
