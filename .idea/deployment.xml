@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="kafka" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="kafka" uploadOnCheckin="48c05add-057a-4308-9ff5-1e4cf650da31" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="kafka">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="kafka" />
   </component>
 </project>
