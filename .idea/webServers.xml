@@ -9,6 +9,9 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="fda0d639-58bc-435a-a43d-27d0b16c8a14" name="hetui" url="http://localhost">
+        <fileTransfer mountedRoot="D:\nainaide" accessType="MOUNT" port="0" />
+      </webServer>
     </option>
   </component>
 </project>

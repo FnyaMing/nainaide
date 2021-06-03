@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" serverName="kafka" uploadOnCheckin="48c05add-057a-4308-9ff5-1e4cf650da31" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="hetui">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="kafka">
         <serverdata>
           <mappings>
